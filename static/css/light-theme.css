@@ -347,12 +347,22 @@ body:not(.dark) .page-content strong {
   text-shadow: 0 0 1px rgba(255, 255, 255, 0.8) !important;
 }
 
-/* Override for elements with gradient backgrounds - keep white text */
+/* PRIORITY OVERRIDE: Elements with gradient backgrounds MUST have white text in both modes */
 body:not(.dark) [style*="background: linear-gradient"] *,
 body:not(.dark) [style*="background:linear-gradient"] *,
 body:not(.dark) div[style*="background: linear-gradient"] *,
 body:not(.dark) div[style*="color: white"] *,
-body:not(.dark) [style*="color: white"] * {
+body:not(.dark) [style*="color: white"] *,
+body:not(.dark) div[style*="background: linear-gradient"] strong,
+body:not(.dark) div[style*="background: linear-gradient"] p,
+body:not(.dark) div[style*="background: linear-gradient"] h1,
+body:not(.dark) div[style*="background: linear-gradient"] h2,
+body:not(.dark) div[style*="background: linear-gradient"] h3,
+body:not(.dark) div[style*="background: linear-gradient"] h4,
+body:not(.dark) div[style*="background: linear-gradient"] h5,
+body:not(.dark) div[style*="background: linear-gradient"] h6,
+body:not(.dark) div[style*="background: linear-gradient"] span,
+body:not(.dark) div[style*="background: linear-gradient"] div {
   color: white !important;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) !important;
 }
@@ -363,4 +373,25 @@ body:not(.dark) span[style*="background-clip: text"] {
   color: transparent !important;
   -webkit-text-fill-color: transparent !important;
   text-shadow: none !important;
+}
+
+/* FINAL OVERRIDE: Colored containers MUST have white text - highest priority */
+body:not(.dark) .main div[style*="background: linear-gradient"],
+body:not(.dark) .post-content div[style*="background: linear-gradient"],
+body:not(.dark) .page-content div[style*="background: linear-gradient"],
+body:not(.dark) article div[style*="background: linear-gradient"],
+body:not(.dark) .main div[style*="background: linear-gradient"] *,
+body:not(.dark) .post-content div[style*="background: linear-gradient"] *,
+body:not(.dark) .page-content div[style*="background: linear-gradient"] *,
+body:not(.dark) article div[style*="background: linear-gradient"] *,
+body:not(.dark) .main [style*="background: linear-gradient"],
+body:not(.dark) .post-content [style*="background: linear-gradient"],
+body:not(.dark) .page-content [style*="background: linear-gradient"],
+body:not(.dark) article [style*="background: linear-gradient"],
+body:not(.dark) .main [style*="background: linear-gradient"] *,
+body:not(.dark) .post-content [style*="background: linear-gradient"] *,
+body:not(.dark) .page-content [style*="background: linear-gradient"] *,
+body:not(.dark) article [style*="background: linear-gradient"] * {
+  color: white !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) !important;
 }
