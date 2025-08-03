@@ -1,7 +1,7 @@
 +++
 date = '2025-08-03T15:47:35+07:00'
 draft = false
-title = 'Connect With Me'
+title = 'Social Media'
 +++
 
 <div style="text-align: center; margin-bottom: 3rem;">
@@ -33,7 +33,7 @@ title = 'Connect With Me'
   <div class="contact-card" style="border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
     <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
       <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub" style="width: 32px; height: 32px;">
-      <h3 style="margin: 0; color: #333; font-size: 1.2rem;">GitHub</h3>
+      <h3 class="github-title" style="margin: 0; font-size: 1.2rem;">GitHub</h3>
     </div>
     <p class="contact-description" style="margin-bottom: 1rem; font-size: 0.9rem;">Code repositories and open source projects</p>
     <a href="https://github.com/ndnam198/" target="_blank" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: #333; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: background 0.3s ease; font-size: 0.9rem;">
@@ -80,7 +80,7 @@ title = 'Connect With Me'
   <!-- Gmail -->
   <div class="contact-card" style="border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
     <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" alt="Gmail" style="width: 32px; height: 32px;">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/gmail.svg" alt="Gmail" style="width: 32px; height: 32px; filter: invert(20%) sepia(100%) saturate(7000%) hue-rotate(350deg) brightness(1.1);">
       <h3 style="margin: 0; color: #ea4335; font-size: 1.2rem;">Email</h3>
     </div>
     <p class="contact-description" style="margin-bottom: 1rem; font-size: 0.9rem;">Professional inquiries and detailed discussions</p>
@@ -96,7 +96,9 @@ title = 'Connect With Me'
   <!-- Phone -->
   <div class="contact-card" style="border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
     <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/phone.svg" alt="Phone" style="width: 32px; height: 32px; filter: invert(40%) sepia(100%) saturate(1000%) hue-rotate(120deg);">
+      <svg alt="Phone" style="width: 32px; height: 32px; fill: #34a853;" viewBox="0 0 24 24">
+        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+      </svg>
       <h3 style="margin: 0; color: #34a853; font-size: 1.2rem;">Phone</h3>
     </div>
     <p class="contact-description" style="margin-bottom: 1rem; font-size: 0.9rem;">Direct calls for urgent matters</p>
@@ -166,7 +168,23 @@ a[style*="background: #34a853"]:hover { background: #2d8f47 !important; }
   filter: invert(1);
 }
 
-.dark .contact-card img[alt="Phone"] {
-  filter: invert(40%) sepia(100%) saturate(1000%) hue-rotate(120deg) brightness(1.2);
+/* Phone SVG icon color for dark mode */
+.dark .contact-card svg[alt="Phone"] {
+  fill: #4ade80 !important;
+}
+
+/* GitHub title color fix for dark mode */
+.dark .contact-card h3:has(+ * img[alt="GitHub"]),
+.dark .contact-card h3:contains("GitHub") {
+  color: #58a6ff !important;
+}
+
+/* Alternative approach - target GitHub title specifically */
+.github-title {
+  color: #333;
+}
+
+.dark .github-title {
+  color: #58a6ff !important;
 }
 </style>

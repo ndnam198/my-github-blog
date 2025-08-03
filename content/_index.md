@@ -47,5 +47,3 @@ I excel at **turning abstract ideas into clear, actionable plans** and continuou
     📝 Check out my blog →
   </a>
 </div>
-
----
