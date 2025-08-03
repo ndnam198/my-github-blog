@@ -1,5 +1,6 @@
 +++
 draft = false
+title = 'Contacts'
 aliases = [
   "/contacts",
   "/contact",
