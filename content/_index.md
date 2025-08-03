@@ -11,7 +11,7 @@ title = 'About'
 ## 👋 Hello, I'm Nam!
 
 <div style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 2rem;">
-  <strong>Full-stack software engineer</strong> with <span style="color: #007acc; font-weight: 600;">6 years of experience</span>, focused on frontend and mobile—especially <strong>Flutter</strong>. I've built and shipped <span style="color: #28a745; font-weight: 600;">5+ apps</span> used by over <span style="color: #dc3545; font-weight: 600;">100,000 people</span>.
+  <strong>Full-stack software engineer</strong> with <span style="color: #ff6b35; font-weight: 600; background: linear-gradient(135deg, #ff6b35, #f7931e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">6 years of experience</span>, focused on frontend and mobile—especially <strong>Flutter</strong>. I've built and shipped <span style="color: #4ecdc4; font-weight: 600; background: linear-gradient(135deg, #4ecdc4, #44a08d); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">5+ apps</span> used by over <span style="color: #e74c3c; font-weight: 600; background: linear-gradient(135deg, #e74c3c, #c0392b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">100,000 people</span>.
 </div>
 
 ### 🎯 What I Care About

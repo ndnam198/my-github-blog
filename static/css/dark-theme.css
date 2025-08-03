@@ -93,27 +93,59 @@
   display: inline-block !important;
 }
 
+/* Enhanced hover effects with brand colors for dark theme */
 .dark .main a[href*="linkedin.com"]:hover,
-.dark .main a[href*="github.com"]:hover,
-.dark .main a[href*="facebook.com"]:hover,
-.dark .main a[href*="wa.me"]:hover,
-.dark .main a[href*="mailto:"]:hover,
-.dark .main a[href*="tel:"]:hover,
 .dark .post-content a[href*="linkedin.com"]:hover,
+.dark .page-content a[href*="linkedin.com"]:hover {
+  background: linear-gradient(135deg, #0a66c2 0%, #004182 100%) !important;
+  transform: translateY(-3px) scale(1.05) !important;
+  box-shadow: 0 8px 25px rgba(10, 102, 194, 0.6) !important;
+  filter: brightness(1.2) !important;
+}
+
+.dark .main a[href*="github.com"]:hover,
 .dark .post-content a[href*="github.com"]:hover,
+.dark .page-content a[href*="github.com"]:hover {
+  background: linear-gradient(135deg, #58a6ff 0%, #1f6feb 100%) !important;
+  transform: translateY(-3px) scale(1.05) !important;
+  box-shadow: 0 8px 25px rgba(88, 166, 255, 0.6) !important;
+  filter: brightness(1.1) !important;
+}
+
+.dark .main a[href*="facebook.com"]:hover,
 .dark .post-content a[href*="facebook.com"]:hover,
+.dark .page-content a[href*="facebook.com"]:hover {
+  background: linear-gradient(135deg, #4267b2 0%, #365899 100%) !important;
+  transform: translateY(-3px) scale(1.05) !important;
+  box-shadow: 0 8px 25px rgba(66, 103, 178, 0.6) !important;
+  filter: brightness(1.2) !important;
+}
+
+.dark .main a[href*="wa.me"]:hover,
 .dark .post-content a[href*="wa.me"]:hover,
+.dark .page-content a[href*="wa.me"]:hover {
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%) !important;
+  transform: translateY(-3px) scale(1.05) !important;
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6) !important;
+  filter: brightness(1.2) !important;
+}
+
+.dark .main a[href*="mailto:"]:hover,
 .dark .post-content a[href*="mailto:"]:hover,
+.dark .page-content a[href*="mailto:"]:hover {
+  background: linear-gradient(135deg, #ea4335 0%, #d93025 100%) !important;
+  transform: translateY(-3px) scale(1.05) !important;
+  box-shadow: 0 8px 25px rgba(234, 67, 53, 0.6) !important;
+  filter: brightness(1.2) !important;
+}
+
+.dark .main a[href*="tel:"]:hover,
 .dark .post-content a[href*="tel:"]:hover,
-.dark .page-content a[href*="linkedin.com"]:hover,
-.dark .page-content a[href*="github.com"]:hover,
-.dark .page-content a[href*="facebook.com"]:hover,
-.dark .page-content a[href*="wa.me"]:hover,
-.dark .page-content a[href*="mailto:"]:hover,
 .dark .page-content a[href*="tel:"]:hover {
-  background: rgba(255, 255, 255, 0.12) !important;
-  transform: translateY(-3px) !important;
-  box-shadow: 0 12px 30px rgba(83, 52, 131, 0.3) !important;
+  background: linear-gradient(135deg, #34c759 0%, #30d158 100%) !important;
+  transform: translateY(-3px) scale(1.05) !important;
+  box-shadow: 0 8px 25px rgba(52, 199, 89, 0.6) !important;
+  filter: brightness(1.2) !important;
 }
 
 /* Dark theme text colors */

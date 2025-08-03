@@ -147,47 +147,59 @@ body:not(.dark) .page-content a[href*="tel:"] {
   box-shadow: 0 3px 10px rgba(255, 107, 107, 0.3) !important;
 }
 
-/* Hover effects for social buttons */
+/* Enhanced hover effects with brighter brand colors */
 body:not(.dark) .main a[href*="linkedin.com"]:hover,
 body:not(.dark) .post-content a[href*="linkedin.com"]:hover,
 body:not(.dark) .page-content a[href*="linkedin.com"]:hover {
-  transform: translateY(-3px) !important;
-  box-shadow: 0 6px 20px rgba(0, 119, 181, 0.4) !important;
+  background: linear-gradient(135deg, #0a66c2 0%, #004182 100%) !important;
+  transform: translateY(-3px) scale(1.05) !important;
+  box-shadow: 0 8px 25px rgba(10, 102, 194, 0.6) !important;
+  filter: brightness(1.1) !important;
 }
 
 body:not(.dark) .main a[href*="github.com"]:hover,
 body:not(.dark) .post-content a[href*="github.com"]:hover,
 body:not(.dark) .page-content a[href*="github.com"]:hover {
-  transform: translateY(-3px) !important;
-  box-shadow: 0 6px 20px rgba(51, 51, 51, 0.4) !important;
+  background: linear-gradient(135deg, #24292e 0%, #0d1117 100%) !important;
+  transform: translateY(-3px) scale(1.05) !important;
+  box-shadow: 0 8px 25px rgba(36, 41, 46, 0.6) !important;
+  filter: brightness(1.2) !important;
 }
 
 body:not(.dark) .main a[href*="facebook.com"]:hover,
 body:not(.dark) .post-content a[href*="facebook.com"]:hover,
 body:not(.dark) .page-content a[href*="facebook.com"]:hover {
-  transform: translateY(-3px) !important;
-  box-shadow: 0 6px 20px rgba(24, 119, 242, 0.4) !important;
+  background: linear-gradient(135deg, #4267b2 0%, #365899 100%) !important;
+  transform: translateY(-3px) scale(1.05) !important;
+  box-shadow: 0 8px 25px rgba(66, 103, 178, 0.6) !important;
+  filter: brightness(1.1) !important;
 }
 
 body:not(.dark) .main a[href*="wa.me"]:hover,
 body:not(.dark) .post-content a[href*="wa.me"]:hover,
 body:not(.dark) .page-content a[href*="wa.me"]:hover {
-  transform: translateY(-3px) !important;
-  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4) !important;
+  background: linear-gradient(135deg, #128c7e 0%, #075e54 100%) !important;
+  transform: translateY(-3px) scale(1.05) !important;
+  box-shadow: 0 8px 25px rgba(18, 140, 126, 0.6) !important;
+  filter: brightness(1.2) !important;
 }
 
 body:not(.dark) .main a[href*="mailto:"]:hover,
 body:not(.dark) .post-content a[href*="mailto:"]:hover,
 body:not(.dark) .page-content a[href*="mailto:"]:hover {
-  transform: translateY(-3px) !important;
-  box-shadow: 0 6px 20px rgba(234, 67, 53, 0.4) !important;
+  background: linear-gradient(135deg, #d93025 0%, #b52d20 100%) !important;
+  transform: translateY(-3px) scale(1.05) !important;
+  box-shadow: 0 8px 25px rgba(217, 48, 37, 0.6) !important;
+  filter: brightness(1.1) !important;
 }
 
 body:not(.dark) .main a[href*="tel:"]:hover,
 body:not(.dark) .post-content a[href*="tel:"]:hover,
 body:not(.dark) .page-content a[href*="tel:"]:hover {
-  transform: translateY(-3px) !important;
-  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4) !important;
+  background: linear-gradient(135deg, #34c759 0%, #30d158 100%) !important;
+  transform: translateY(-3px) scale(1.05) !important;
+  box-shadow: 0 8px 25px rgba(52, 199, 89, 0.6) !important;
+  filter: brightness(1.1) !important;
 }
 
 /* Light theme text colors */
