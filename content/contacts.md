@@ -2,6 +2,13 @@
 date = '2025-08-03T15:47:35+07:00'
 draft = false
 title = 'Social Media'
+aliases = [
+  "/contacts",
+  "/contact",
+  "/social-media",
+  "/social-media-contacts",
+  "/social-media-contacts",
+]
 +++
 
 <div style="text-align: center; margin-bottom: 3rem;">
@@ -118,73 +125,3 @@ title = 'Social Media'
   <p style="margin-bottom: 0; opacity: 0.9;">I'm always excited to discuss new opportunities, share ideas, or collaborate on interesting projects.</p>
 </div>
 
-<style>
-/* Theme-adaptive contact cards */
-.contact-card {
-  background: var(--entry) !important;
-  border: 1px solid var(--border) !important;
-  color: var(--content) !important;
-}
-
-.contact-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(0,0,0,0.15) !important;
-}
-
-.dark .contact-card:hover {
-  box-shadow: 0 8px 30px rgba(255,255,255,0.1) !important;
-}
-
-.contact-title {
-  color: var(--primary) !important;
-}
-
-.contact-description {
-  color: var(--secondary) !important;
-}
-
-.contact-url {
-  color: var(--secondary) !important;
-}
-
-.intro-text {
-  color: var(--secondary) !important;
-}
-
-.intro-title {
-  color: var(--primary) !important;
-}
-
-/* Button hover effects */
-a[style*="background: #0077b5"]:hover { background: #005885 !important; }
-a[style*="background: #333"]:hover { background: #555 !important; }
-a[style*="background: #1877f2"]:hover { background: #166fe5 !important; }
-a[style*="background: #25d366"]:hover { background: #20b858 !important; }
-a[style*="background: #ea4335"]:hover { background: #d33b2c !important; }
-a[style*="background: #34a853"]:hover { background: #2d8f47 !important; }
-
-/* Dark mode icon adjustments */
-.dark .contact-card img[alt="GitHub"] {
-  filter: invert(1);
-}
-
-/* Phone SVG icon color for dark mode */
-.dark .contact-card svg[alt="Phone"] {
-  fill: #4ade80 !important;
-}
-
-/* GitHub title color fix for dark mode */
-.dark .contact-card h3:has(+ * img[alt="GitHub"]),
-.dark .contact-card h3:contains("GitHub") {
-  color: #58a6ff !important;
-}
-
-/* Alternative approach - target GitHub title specifically */
-.github-title {
-  color: #333;
-}
-
-.dark .github-title {
-  color: #58a6ff !important;
-}
-</style>

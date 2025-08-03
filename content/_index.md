@@ -1,7 +1,7 @@
 +++
 date = '2025-08-03T14:01:02+07:00'
 draft = false
-title = 'About'
+title = 'Home'
 aliases = [
   "/home",
   "/index",
@@ -10,7 +10,7 @@ aliases = [
 ]
 +++
 
-<div style="display: flex; justify-content: center; align-items: center; margin-bottom: 2rem;">
+<div style="display: flex; justify-content: center; align-items: center; margin-bottom: 6rem;margin-top: 4rem;">
   <img src="images/avatar.jpeg" alt="Nam Nguyen - Software Engineer" width="200" height="200" style="border-radius: 50%; object-fit: cover; box-shadow: 0 8px 32px rgba(0,0,0,0.1); border: 4px solid #fff; display: block; margin: 0 auto;">
 </div>
 
@@ -40,7 +40,7 @@ I excel at **turning abstract ideas into clear, actionable plans** and continuou
 
 ---
 
-<div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 12px; margin: 2rem 0;">
+<div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 12px;">
   <h3 style="margin-top: 0; color: white;">🎯 Current Goal</h3>
   <p style="font-size: 1.3rem; margin-bottom: 1.5rem;">Build meaningful software that improves lives</p>
   <a href="/posts/" style="display: inline-block; background: white; color: #667eea; padding: 12px 24px; border-radius: 25px; text-decoration: none; font-weight: 600; transition: transform 0.2s;">
