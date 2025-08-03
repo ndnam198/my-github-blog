@@ -490,26 +490,7 @@ nav a:hover,
   box-shadow: 0 8px 20px rgba(83, 52, 131, 0.3) !important;
 }
 
-/* Contact Cards - Add background styling */
-.contact-card {
-  background: rgba(255, 255, 255, 0.08) !important;
-  -webkit-backdrop-filter: blur(10px) !important;
-  backdrop-filter: blur(10px) !important;
-  border: 1px solid rgba(255, 255, 255, 0.12) !important;
-  border-radius: 12px !important;
-  padding: 1.5rem !important;
-  margin: 1rem 0 !important;
-  animation: none !important;
-  transition: all 0.3s ease !important;
-}
-
-.contact-card:hover {
-  background: rgba(255, 255, 255, 0.12) !important;
-  transform: translateY(-2px) !important;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
-}
-
-/* Remove all contact card animations */
+/* Contact Cards styling moved to theme-specific files */
 
 /* Theme-adaptive text colors with enhanced visibility */
 .contact-title {
@@ -532,129 +513,7 @@ nav a:hover,
   color: var(--primary) !important;
 }
 
-/* Enhanced text visibility against gradient background */
-/* Light theme - darker text for better contrast */
-:root {
-  --enhanced-primary: #1a1a1a !important;
-  --enhanced-secondary: #4a4a4a !important;
-  --enhanced-tertiary: #666666 !important;
-}
-
-/* Dark theme - brighter text for better contrast */
-.dark {
-  --enhanced-primary: #ffffff !important;
-  --enhanced-secondary: #e0e0e0 !important;
-  --enhanced-tertiary: #cccccc !important;
-}
-
-
-
-/* Apply enhanced colors to text that gets lost in gradient */
-.main p,
-.post-content p,
-.page-content p,
-article p,
-.main div,
-.post-content div,
-.page-content div,
-.main span,
-.post-content span,
-.page-content span {
-  color: var(--enhanced-primary) !important;
-}
-
-.main h1,
-.main h2,
-.main h3,
-.main h4,
-.main h5,
-.main h6,
-.post-content h1,
-.post-content h2,
-.post-content h3,
-.post-content h4,
-.post-content h5,
-.post-content h6,
-.page-content h1,
-.page-content h2,
-.page-content h3,
-.page-content h4,
-.page-content h5,
-.page-content h6 {
-  color: var(--enhanced-primary) !important;
-}
-
-/* Specific text elements */
-.intro-text {
-  color: var(--enhanced-secondary) !important;
-  font-weight: 500 !important;
-}
-
-.intro-title {
-  color: var(--enhanced-primary) !important;
-}
-
-/* Contact page specific styling */
-.contact-title,
-.contact-card h3 {
-  color: var(--enhanced-primary) !important;
-}
-
-.contact-description,
-.contact-card p {
-  color: var(--enhanced-secondary) !important;
-}
-
-.contact-url {
-  color: var(--enhanced-tertiary) !important;
-  font-size: 0.9em !important;
-}
-
-
-
-/* Button hover effects */
-a[style*="background: #0077b5"]:hover {
-  background: #005885 !important;
-}
-
-a[style*="background: #333"]:hover {
-  background: #555 !important;
-}
-
-a[style*="background: #1877f2"]:hover {
-  background: #166fe5 !important;
-}
-
-a[style*="background: #25d366"]:hover {
-  background: #20b858 !important;
-}
-
-a[style*="background: #ea4335"]:hover {
-  background: #d33b2c !important;
-}
-
-a[style*="background: #34a853"]:hover {
-  background: #2d8f47 !important;
-}
-
-/* Dark mode icon adjustments */
-.dark .contact-card img[alt="GitHub"] {
-  filter: invert(1);
-}
-
-/* Phone SVG icon color for dark mode */
-.dark .contact-card svg[alt="Phone"] {
-  fill: #4ade80 !important;
-}
-
-/* GitHub title color fix for dark mode */
-.github-title {
-  color: #333;
-}
-
-.dark .github-title {
-  color: #58a6ff !important;
-}
+/* Core text styling - theme-specific colors handled in separate files */
 
 /* Extend animations to other page elements */
 .post-entry,

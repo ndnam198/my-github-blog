@@ -1,13 +1,7 @@
 +++
 date = '2025-08-03T14:01:02+07:00'
 draft = false
-title = 'Home'
-aliases = [
-  "/home",
-  "/index",
-  "/about",
-  "/main"
-]
+title = 'About'
 +++
 
 <div style="display: flex; justify-content: center; align-items: center; margin: 2rem 0;">

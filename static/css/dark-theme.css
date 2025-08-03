@@ -1,0 +1,152 @@
+/* Dark Theme Styles */
+
+/* Dark theme - glass-morphism effects */
+.dark .contact-card {
+  background: rgba(255, 255, 255, 0.08) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 12px !important;
+  padding: 1.5rem !important;
+  margin: 1rem 0 !important;
+  animation: none !important;
+  transition: all 0.3s ease !important;
+}
+
+.dark .contact-card:hover {
+  background: rgba(255, 255, 255, 0.12) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.dark .contact-card h3 {
+  color: #ffffff !important;
+}
+
+.dark .contact-card p {
+  color: #e0e0e0 !important;
+}
+
+.dark .contact-card .contact-url {
+  color: #cccccc !important;
+}
+
+/* Dark mode - blog button */
+.dark .main a[href="/posts/"],
+.dark .main a[href*="blog"],
+.dark .post-content a[href="/posts/"],
+.dark .post-content a[href*="blog"],
+.dark .page-content a[href="/posts/"],
+.dark .page-content a[href*="blog"] {
+  background: rgba(255, 255, 255, 0.08) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 25px !important;
+  padding: 12px 24px !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+  display: inline-block !important;
+}
+
+.dark .main a[href="/posts/"]:hover,
+.dark .main a[href*="blog"]:hover,
+.dark .post-content a[href="/posts/"]:hover,
+.dark .post-content a[href*="blog"]:hover,
+.dark .page-content a[href="/posts/"]:hover,
+.dark .page-content a[href*="blog"]:hover {
+  background: rgba(255, 255, 255, 0.12) !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 12px 30px rgba(83, 52, 131, 0.3) !important;
+}
+
+/* Dark mode - social media buttons */
+.dark .main a[href*="linkedin.com"],
+.dark .main a[href*="github.com"],
+.dark .main a[href*="facebook.com"],
+.dark .main a[href*="wa.me"],
+.dark .main a[href*="mailto:"],
+.dark .main a[href*="tel:"],
+.dark .post-content a[href*="linkedin.com"],
+.dark .post-content a[href*="github.com"],
+.dark .post-content a[href*="facebook.com"],
+.dark .post-content a[href*="wa.me"],
+.dark .post-content a[href*="mailto:"],
+.dark .post-content a[href*="tel:"],
+.dark .page-content a[href*="linkedin.com"],
+.dark .page-content a[href*="github.com"],
+.dark .page-content a[href*="facebook.com"],
+.dark .page-content a[href*="wa.me"],
+.dark .page-content a[href*="mailto:"],
+.dark .page-content a[href*="tel:"] {
+  background: rgba(255, 255, 255, 0.08) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 8px !important;
+  padding: 0.5rem 1rem !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+  display: inline-block !important;
+}
+
+.dark .main a[href*="linkedin.com"]:hover,
+.dark .main a[href*="github.com"]:hover,
+.dark .main a[href*="facebook.com"]:hover,
+.dark .main a[href*="wa.me"]:hover,
+.dark .main a[href*="mailto:"]:hover,
+.dark .main a[href*="tel:"]:hover,
+.dark .post-content a[href*="linkedin.com"]:hover,
+.dark .post-content a[href*="github.com"]:hover,
+.dark .post-content a[href*="facebook.com"]:hover,
+.dark .post-content a[href*="wa.me"]:hover,
+.dark .post-content a[href*="mailto:"]:hover,
+.dark .post-content a[href*="tel:"]:hover,
+.dark .page-content a[href*="linkedin.com"]:hover,
+.dark .page-content a[href*="github.com"]:hover,
+.dark .page-content a[href*="facebook.com"]:hover,
+.dark .page-content a[href*="wa.me"]:hover,
+.dark .page-content a[href*="mailto:"]:hover,
+.dark .page-content a[href*="tel:"]:hover {
+  background: rgba(255, 255, 255, 0.12) !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 12px 30px rgba(83, 52, 131, 0.3) !important;
+}
+
+/* Dark theme text colors */
+.dark .main p,
+.dark .post-content p,
+.dark .page-content p,
+.dark article p,
+.dark .main div,
+.dark .post-content div,
+.dark .page-content div,
+.dark .main span,
+.dark .post-content span,
+.dark .page-content span {
+  color: #ffffff !important;
+}
+
+.dark .main h1,
+.dark .main h2,
+.dark .main h3,
+.dark .main h4,
+.dark .main h5,
+.dark .main h6,
+.dark .post-content h1,
+.dark .post-content h2,
+.dark .post-content h3,
+.dark .post-content h4,
+.dark .post-content h5,
+.dark .post-content h6,
+.dark .page-content h1,
+.dark .page-content h2,
+.dark .page-content h3,
+.dark .page-content h4,
+.dark .page-content h5,
+.dark .page-content h6 {
+  color: #ffffff !important;
+}

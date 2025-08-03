@@ -1,0 +1,226 @@
+/* Light Theme Styles */
+
+/* Light theme - bright solid backgrounds for better contrast */
+body:not(.dark) .contact-card {
+  background: linear-gradient(135deg, #f8f9ff 0%, #e8f0ff 100%) !important;
+  border: 2px solid #d0d8ff !important;
+  border-radius: 15px !important;
+  padding: 1.5rem !important;
+  margin: 1rem 0 !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.3s ease !important;
+}
+
+body:not(.dark) .contact-card:hover {
+  background: linear-gradient(135deg, #ffffff 0%, #f0f4ff 100%) !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+  border-color: #b8c6ff !important;
+}
+
+body:not(.dark) .contact-card h3 {
+  color: #2d3748 !important;
+  font-weight: 700 !important;
+}
+
+body:not(.dark) .contact-card p {
+  color: #4a5568 !important;
+}
+
+body:not(.dark) .contact-card .contact-url {
+  color: #718096 !important;
+  font-size: 0.9em !important;
+}
+
+/* Light mode - blog button with vibrant gradient */
+body:not(.dark) .main a[href="/posts/"],
+body:not(.dark) .main a[href*="blog"],
+body:not(.dark) .post-content a[href="/posts/"],
+body:not(.dark) .post-content a[href*="blog"],
+body:not(.dark) .page-content a[href="/posts/"],
+body:not(.dark) .page-content a[href*="blog"] {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  border: none !important;
+  border-radius: 30px !important;
+  padding: 14px 28px !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-weight: 700 !important;
+  transition: all 0.3s ease !important;
+  display: inline-block !important;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+}
+
+body:not(.dark) .main a[href="/posts/"]:hover,
+body:not(.dark) .main a[href*="blog"]:hover,
+body:not(.dark) .post-content a[href="/posts/"]:hover,
+body:not(.dark) .post-content a[href*="blog"]:hover,
+body:not(.dark) .page-content a[href="/posts/"]:hover,
+body:not(.dark) .page-content a[href*="blog"]:hover {
+  background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%) !important;
+  transform: translateY(-4px) !important;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4) !important;
+}
+
+/* Light mode - social media buttons with unique colors */
+body:not(.dark) .main a[href*="linkedin.com"],
+body:not(.dark) .post-content a[href*="linkedin.com"],
+body:not(.dark) .page-content a[href*="linkedin.com"] {
+  background: linear-gradient(135deg, #0077b5 0%, #005885 100%) !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 10px !important;
+  padding: 0.75rem 1.25rem !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+  display: inline-block !important;
+  box-shadow: 0 3px 10px rgba(0, 119, 181, 0.3) !important;
+}
+
+body:not(.dark) .main a[href*="github.com"],
+body:not(.dark) .post-content a[href*="github.com"],
+body:not(.dark) .page-content a[href*="github.com"] {
+  background: linear-gradient(135deg, #333333 0%, #1a1a1a 100%) !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 10px !important;
+  padding: 0.75rem 1.25rem !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+  display: inline-block !important;
+  box-shadow: 0 3px 10px rgba(51, 51, 51, 0.3) !important;
+}
+
+body:not(.dark) .main a[href*="facebook.com"],
+body:not(.dark) .post-content a[href*="facebook.com"],
+body:not(.dark) .page-content a[href*="facebook.com"] {
+  background: linear-gradient(135deg, #1877f2 0%, #0d5aa7 100%) !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 10px !important;
+  padding: 0.75rem 1.25rem !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+  display: inline-block !important;
+  box-shadow: 0 3px 10px rgba(24, 119, 242, 0.3) !important;
+}
+
+body:not(.dark) .main a[href*="wa.me"],
+body:not(.dark) .post-content a[href*="wa.me"],
+body:not(.dark) .page-content a[href*="wa.me"] {
+  background: linear-gradient(135deg, #25d366 0%, #1da851 100%) !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 10px !important;
+  padding: 0.75rem 1.25rem !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+  display: inline-block !important;
+  box-shadow: 0 3px 10px rgba(37, 211, 102, 0.3) !important;
+}
+
+body:not(.dark) .main a[href*="mailto:"],
+body:not(.dark) .post-content a[href*="mailto:"],
+body:not(.dark) .page-content a[href*="mailto:"] {
+  background: linear-gradient(135deg, #ea4335 0%, #c5221f 100%) !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 10px !important;
+  padding: 0.75rem 1.25rem !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+  display: inline-block !important;
+  box-shadow: 0 3px 10px rgba(234, 67, 53, 0.3) !important;
+}
+
+body:not(.dark) .main a[href*="tel:"],
+body:not(.dark) .post-content a[href*="tel:"],
+body:not(.dark) .page-content a[href*="tel:"] {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%) !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 10px !important;
+  padding: 0.75rem 1.25rem !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+  display: inline-block !important;
+  box-shadow: 0 3px 10px rgba(255, 107, 107, 0.3) !important;
+}
+
+/* Hover effects for social buttons */
+body:not(.dark) .main a[href*="linkedin.com"]:hover,
+body:not(.dark) .post-content a[href*="linkedin.com"]:hover,
+body:not(.dark) .page-content a[href*="linkedin.com"]:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 6px 20px rgba(0, 119, 181, 0.4) !important;
+}
+
+body:not(.dark) .main a[href*="github.com"]:hover,
+body:not(.dark) .post-content a[href*="github.com"]:hover,
+body:not(.dark) .page-content a[href*="github.com"]:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 6px 20px rgba(51, 51, 51, 0.4) !important;
+}
+
+body:not(.dark) .main a[href*="facebook.com"]:hover,
+body:not(.dark) .post-content a[href*="facebook.com"]:hover,
+body:not(.dark) .page-content a[href*="facebook.com"]:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 6px 20px rgba(24, 119, 242, 0.4) !important;
+}
+
+body:not(.dark) .main a[href*="wa.me"]:hover,
+body:not(.dark) .post-content a[href*="wa.me"]:hover,
+body:not(.dark) .page-content a[href*="wa.me"]:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4) !important;
+}
+
+body:not(.dark) .main a[href*="mailto:"]:hover,
+body:not(.dark) .post-content a[href*="mailto:"]:hover,
+body:not(.dark) .page-content a[href*="mailto:"]:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 6px 20px rgba(234, 67, 53, 0.4) !important;
+}
+
+body:not(.dark) .main a[href*="tel:"]:hover,
+body:not(.dark) .post-content a[href*="tel:"]:hover,
+body:not(.dark) .page-content a[href*="tel:"]:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4) !important;
+}
+
+/* Light theme text colors */
+body:not(.dark) .main p,
+body:not(.dark) .post-content p,
+body:not(.dark) .page-content p,
+body:not(.dark) article p,
+body:not(.dark) .main div,
+body:not(.dark) .post-content div,
+body:not(.dark) .page-content div,
+body:not(.dark) .main span,
+body:not(.dark) .post-content span,
+body:not(.dark) .page-content span {
+  color: #2d3748 !important;
+}
+
+body:not(.dark) .main h1,
+body:not(.dark) .main h2,
+body:not(.dark) .main h3,
+body:not(.dark) .main h4,
+body:not(.dark) .main h5,
+body:not(.dark) .main h6,
+body:not(.dark) .post-content h1,
+body:not(.dark) .post-content h2,
+body:not(.dark) .post-content h3,
+body:not(.dark) .post-content h4,
+body:not(.dark) .post-content h5,
+body:not(.dark) .post-content h6,
+body:not(.dark) .page-content h1,
+body:not(.dark) .page-content h2,
+body:not(.dark) .page-content h3,
+body:not(.dark) .page-content h4,
+body:not(.dark) .page-content h5,
+body:not(.dark) .page-content h6 {
+  color: #1a202c !important;
+}
