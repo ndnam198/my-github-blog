@@ -1,5 +1,19 @@
 /* Dark Theme Styles */
 
+/* RESTORE Dark mode background - ensure it overrides light theme */
+body.dark html,
+.dark html {
+  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 25%, #16213e 50%, #0f3460 75%, #533483 100%) !important;
+  min-height: 100vh !important;
+  position: relative;
+  overflow-x: hidden !important;
+  animation: none !important; /* Remove light mode animation */
+}
+
+body.dark {
+  background: transparent !important;
+}
+
 /* Dark theme - glass-morphism effects */
 .dark .contact-card {
   background: rgba(255, 255, 255, 0.08) !important;

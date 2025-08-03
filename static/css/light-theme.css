@@ -1,5 +1,104 @@
 /* Light Theme Styles */
 
+/* Light theme - vivid and bright background with faster animations */
+:root:not(.dark) {
+  --enhanced-primary: #000000 !important;
+  --enhanced-secondary: #1a1a1a !important;
+  --enhanced-tertiary: #333333 !important;
+}
+
+/* LIGHT MODE ONLY - Override background for light mode */
+html.light-mode,
+html:not(.dark-mode) {
+  background: linear-gradient(135deg, 
+    #ffeef8 0%, 
+    #e8f4fd 15%, 
+    #f0f8ff 30%, 
+    #fff5ee 45%, 
+    #f5f5dc 60%, 
+    #e6e6fa 75%, 
+    #fdf5e6 90%, 
+    #fff0f5 100%) !important;
+  animation: lightGradientShift 8s ease-in-out infinite !important;
+  min-height: 100vh !important;
+}
+
+body:not(.dark) {
+  background: transparent !important;
+}
+
+/* Light mode gradient animation - faster and more vivid */
+@keyframes lightGradientShift {
+  0% {
+    background: linear-gradient(135deg, 
+      #ffeef8 0%, 
+      #e8f4fd 15%, 
+      #f0f8ff 30%, 
+      #fff5ee 45%, 
+      #f5f5dc 60%, 
+      #e6e6fa 75%, 
+      #fdf5e6 90%, 
+      #fff0f5 100%);
+  }
+  25% {
+    background: linear-gradient(135deg, 
+      #fff0f5 0%, 
+      #ffeef8 15%, 
+      #e8f4fd 30%, 
+      #f0f8ff 45%, 
+      #fff5ee 60%, 
+      #f5f5dc 75%, 
+      #e6e6fa 90%, 
+      #fdf5e6 100%);
+  }
+  50% {
+    background: linear-gradient(135deg, 
+      #fdf5e6 0%, 
+      #fff0f5 15%, 
+      #ffeef8 30%, 
+      #e8f4fd 45%, 
+      #f0f8ff 60%, 
+      #fff5ee 75%, 
+      #f5f5dc 90%, 
+      #e6e6fa 100%);
+  }
+  75% {
+    background: linear-gradient(135deg, 
+      #e6e6fa 0%, 
+      #fdf5e6 15%, 
+      #fff0f5 30%, 
+      #ffeef8 45%, 
+      #e8f4fd 60%, 
+      #f0f8ff 75%, 
+      #fff5ee 90%, 
+      #f5f5dc 100%);
+  }
+  100% {
+    background: linear-gradient(135deg, 
+      #ffeef8 0%, 
+      #e8f4fd 15%, 
+      #f0f8ff 30%, 
+      #fff5ee 45%, 
+      #f5f5dc 60%, 
+      #e6e6fa 75%, 
+      #fdf5e6 90%, 
+      #fff0f5 100%);
+  }
+}
+
+/* Faster aircraft animations for light mode */
+body:not(.dark) body::after {
+  animation: rocketFlight 25s ease-in-out infinite !important;
+}
+
+body:not(.dark) .flying-objects::before {
+  animation: planeFlight 35s ease-in-out infinite 8s !important;
+}
+
+body:not(.dark) .flying-objects::after {
+  animation: smallPlaneFlight 40s ease-in-out infinite 20s !important;
+}
+
 /* Light theme - bright solid backgrounds for better contrast */
 body:not(.dark) .contact-card {
   background: linear-gradient(135deg, #f8f9ff 0%, #e8f0ff 100%) !important;
@@ -202,20 +301,20 @@ body:not(.dark) .page-content a[href*="tel:"]:hover {
   filter: brightness(1.1) !important;
 }
 
-/* Light theme text colors */
-body:not(.dark) .main p,
-body:not(.dark) .post-content p,
-body:not(.dark) .page-content p,
-body:not(.dark) article p,
-body:not(.dark) .main div,
-body:not(.dark) .post-content div,
-body:not(.dark) .page-content div,
-body:not(.dark) .main span,
-body:not(.dark) .post-content span,
-body:not(.dark) .page-content span {
-  color: #2d3748 !important;
+/* AGGRESSIVE TEXT CONTRAST FOR LIGHT MODE */
+/* Maximum contrast black text for all elements */
+body:not(.dark) .main *,
+body:not(.dark) .post-content *,
+body:not(.dark) .page-content *,
+body:not(.dark) article *,
+body:not(.dark) .main,
+body:not(.dark) .post-content,
+body:not(.dark) .page-content {
+  color: #000000 !important;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.8) !important;
 }
 
+/* Pure black for headings with strong shadow */
 body:not(.dark) .main h1,
 body:not(.dark) .main h2,
 body:not(.dark) .main h3,
@@ -234,5 +333,34 @@ body:not(.dark) .page-content h3,
 body:not(.dark) .page-content h4,
 body:not(.dark) .page-content h5,
 body:not(.dark) .page-content h6 {
-  color: #1a202c !important;
+  color: #000000 !important;
+  font-weight: 900 !important;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Strong text gets extra bold */
+body:not(.dark) .main strong,
+body:not(.dark) .post-content strong,
+body:not(.dark) .page-content strong {
+  color: #000000 !important;
+  font-weight: 900 !important;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Override for elements with gradient backgrounds - keep white text */
+body:not(.dark) [style*="background: linear-gradient"] *,
+body:not(.dark) [style*="background:linear-gradient"] *,
+body:not(.dark) div[style*="background: linear-gradient"] *,
+body:not(.dark) div[style*="color: white"] *,
+body:not(.dark) [style*="color: white"] * {
+  color: white !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Special handling for gradient text effects - preserve the gradient */
+body:not(.dark) span[style*="-webkit-background-clip: text"],
+body:not(.dark) span[style*="background-clip: text"] {
+  color: transparent !important;
+  -webkit-text-fill-color: transparent !important;
+  text-shadow: none !important;
 }
