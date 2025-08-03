@@ -7,7 +7,7 @@ aliases = [
 +++
 
 <div style="display: flex; justify-content: center; align-items: center; margin: 2rem 0;">
-  <img src="/images/avatar.jpeg" alt="Nam Nguyen - Software Engineer" width="200" height="200" style="border-radius: 50%; object-fit: cover; box-shadow: 0 8px 32px rgba(77, 57, 57, 0.1); border: 4px solid #fff; display: block; margin: 0 auto;">
+  <img src="https://ndnam198.github.io/my-github-blog/images/avatar.jpeg" alt="Nam Nguyen - Software Engineer" width="200" height="200" style="border-radius: 50%; object-fit: cover; box-shadow: 0 8px 32px rgba(77, 57, 57, 0.1); border: 4px solid #fff; display: block; margin: 0 auto;">
 </div>
 
 ## 👋 Hello, I'm Nam!
