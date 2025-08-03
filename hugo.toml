@@ -9,7 +9,6 @@ theme = "PaperMod"
 
 [params]
   ShowPostsOnHomePage = false
-  Image = "/images/avatar.jpeg"
 
 # Enable custom 404 page
 enableEmoji = true
