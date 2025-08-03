@@ -38,8 +38,8 @@ I excel at **turning abstract ideas into clear, actionable plans** and continuou
 
 <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 12px;">
   <h3 style="margin-top: 0; color: white;">🎯 Current Goal</h3>
-  <p style="font-size: 1.3rem; margin-bottom: 1.5rem;">Build meaningful software that improves lives</p>
-  <a href="/posts/" style="display: inline-block; background: white; color: #667eea; padding: 12px 24px; border-radius: 25px; text-decoration: none; font-weight: 600; transition: transform 0.2s;">
+  <p style="font-size: 1.3rem;">Build meaningful software that improves lives</p>
+  <!-- <a href="/posts/" style="display: inline-block; background: white; color: #667eea; padding: 12px 24px; border-radius: 25px; text-decoration: none; font-weight: 600; transition: transform 0.2s;">
     📝 Check out my blog →
-  </a>
+  </a> -->
 </div>
