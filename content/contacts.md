@@ -1,7 +1,5 @@
 +++
-date = '2025-08-03T15:47:35+07:00'
 draft = false
-title = 'Social Media'
 aliases = [
   "/contacts",
   "/contact",
@@ -11,7 +9,7 @@ aliases = [
 ]
 +++
 
-<div style="text-align: center; margin-bottom: 3rem;">
+<div style="text-align: center; margin: 2rem 0;">
   <h2 class="intro-title" style="margin-bottom: 1rem;">🌐 Let's Connect!</h2>
   <p class="intro-text" style="font-size: 1.1rem; max-width: 600px; margin: 0 auto;">
     I'd love to hear from you! Whether you want to collaborate on a project, discuss technology, or just say hello, feel free to reach out through any of these platforms.

@@ -298,20 +298,21 @@ html::before {
 }
 
 
-/* Main Content Container with Border */
+/* Remove outer container styling - make main containers transparent */
 .main,
 .post-content,
 .page-content {
-  background: rgba(255, 255, 255, 0.03) !important;
-  backdrop-filter: blur(15px) !important;
-  border: 1px solid rgba(255, 255, 255, 0.15) !important;
-  border-radius: 20px !important;
+  background: transparent !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+  border: none !important;
+  border-radius: 0 !important;
   padding: 2.5rem !important;
   margin: 2rem auto !important;
   max-width: 800px !important;
   position: relative !important;
   z-index: 2 !important;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: none !important;
   min-height: auto !important;
 }
 
@@ -324,8 +325,22 @@ html::before {
 .page-content > section:not([style]) {
   background: transparent !important;
   border: none !important;
+  -webkit-backdrop-filter: none !important;
   backdrop-filter: none !important;
   box-shadow: none !important;
+}
+
+/* Target the specific inner container that's getting the glass effect */
+main article > div:first-child,
+main .main > div:first-child,
+.main article > div:first-child {
+  background: transparent !important;
+  border: none !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 /* Restore styling for specific interactive elements that need it */
