@@ -1,0 +1,2 @@
+# Redirect all unmatched routes to homepage
+/* / 200

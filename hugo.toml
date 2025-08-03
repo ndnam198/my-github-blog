@@ -12,18 +12,26 @@ theme = "PaperMod"
   [params.homeInfoParams]
     Image = "/images/avatar.jpeg"
 
+# Enable custom 404 page
+enableEmoji = true
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
 
 [menu]
+  # [[menu.main]]
+  #   name = "Blog"
+  #   url = "/posts/"
+  #   weight = 1
+
   [[menu.main]]
-    name = "Blog"
-    url = "/posts/"
-    weight = 1
+    name = "Contacts"
+    url = "/contacts"
+    weight = 2
 
   [[menu.main]]
     name = "About"
     url = "/"
-    weight = 2
+    weight = 3

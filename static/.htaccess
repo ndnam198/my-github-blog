@@ -1,0 +1,8 @@
+# Redirect all 404 errors to homepage
+ErrorDocument 404 /my-github-blog/
+
+# Alternative approach - redirect specific patterns
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /my-github-blog/ [R=301,L]
