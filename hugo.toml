@@ -1,4 +1,4 @@
-baseURL = '/'
+baseURL = 'https://ndnam198.github.io/my-github-blog/'
 languageCode = 'en-us'
 title = "Nam's Homepage"
 theme = "PaperMod"
@@ -9,6 +9,8 @@ theme = "PaperMod"
 
 [params]
   ShowPostsOnHomePage = false
+  [params.homeInfoParams]
+    Image = "/images/avatar.jpeg"
 
 [markup]
   [markup.goldmark]

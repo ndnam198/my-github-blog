@@ -5,7 +5,7 @@ title = 'About'
 +++
 
 <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 2rem;">
-  <img src="/images/avatar.jpeg" alt="Nam Nguyen - Software Engineer" width="200" height="200" style="border-radius: 50%; object-fit: cover; box-shadow: 0 8px 32px rgba(0,0,0,0.1); border: 4px solid #fff; display: block; margin: 0 auto;">
+  <img src="images/avatar.jpeg" alt="Nam Nguyen - Software Engineer" width="200" height="200" style="border-radius: 50%; object-fit: cover; box-shadow: 0 8px 32px rgba(0,0,0,0.1); border: 4px solid #fff; display: block; margin: 0 auto;">
 </div>
 
 ## 👋 Hello, I'm Nam!
