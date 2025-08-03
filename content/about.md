@@ -39,7 +39,28 @@ I excel at **turning abstract ideas into clear, actionable plans** and continuou
 <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 12px;">
   <h3 style="margin-top: 0; color: white;">🎯 Current Goal</h3>
   <p style="font-size: 1.3rem; margin-bottom: 1.5rem;">Build meaningful software that improves lives</p>
-  <a href="/posts/" style="display: inline-block; background: white; color: #667eea; padding: 12px 24px; border-radius: 25px; text-decoration: none; font-weight: 600; transition: transform 0.2s;">
+  <a href="#" id="blog-button" style="display: inline-block; background: white; color: #667eea; padding: 12px 24px; border-radius: 25px; text-decoration: none; font-weight: 600; transition: transform 0.2s; cursor: pointer;">
     📝 Check out my blog →
   </a>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const blogButton = document.getElementById('blog-button');
+  if (blogButton) {
+    blogButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      // Dynamic URL construction for both local and remote
+      if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+        window.location.href = '/posts/';
+      } else {
+        // Extract repo name from current path and construct posts URL
+        const pathParts = window.location.pathname.split('/').filter(part => part);
+        const repoName = pathParts[0] || '';
+        window.location.href = repoName ? `/${repoName}/posts/` : '/posts/';
+      }
+    });
+  }
+});
+</script>
