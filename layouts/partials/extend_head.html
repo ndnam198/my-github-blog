@@ -1,2 +1,11 @@
 {{- /* Global CSS for animated gradient background and theme-adaptive styling */ -}}
 <link rel="stylesheet" href="{{ "css/global-animations.css" | relURL }}">
+
+{{- /* Flying objects container for realistic aircraft animations */ -}}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const flyingContainer = document.createElement('div');
+  flyingContainer.className = 'flying-objects';
+  document.body.appendChild(flyingContainer);
+});
+</script>

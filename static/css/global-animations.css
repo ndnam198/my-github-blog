@@ -13,6 +13,125 @@ body {
   overflow-x: hidden !important;
 }
 
+/* Flying Aircraft with Realistic Physics */
+body::after {
+  content: '🚀';
+  position: fixed;
+  font-size: 28px;
+  top: 15%;
+  left: -60px;
+  animation: rocketFlight 45s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 1;
+  filter: drop-shadow(0 0 8px rgba(255, 100, 100, 0.6));
+}
+
+/* Additional aircraft container */
+.flying-objects {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.flying-objects::before {
+  content: '✈️';
+  position: absolute;
+  font-size: 24px;
+  top: 25%;
+  left: -50px;
+  animation: planeFlight 60s ease-in-out infinite 15s;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.flying-objects::after {
+  content: '🛩️';
+  position: absolute;
+  font-size: 20px;
+  top: 70%;
+  left: -40px;
+  animation: smallPlaneFlight 50s ease-in-out infinite 30s;
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.2));
+}
+
+/* Remove any pseudo-elements that create triangles/arrows */
+*::before,
+*::after {
+  border-width: 0 !important;
+  border-style: none !important;
+}
+
+/* Preserve our particles animation */
+html::before {
+  border: none !important;
+}
+
+/* Remove excessive margins and padding */
+body,
+main,
+article,
+.main,
+.post,
+.page {
+  margin-bottom: 0 !important;
+  padding-bottom: 1rem !important;
+}
+
+/* Compact footer */
+footer,
+.footer {
+  margin-top: 2rem !important;
+  padding: 1rem !important;
+}
+
+/* Remove border from PaperMod button to match other footer links */
+footer a,
+.footer a,
+footer button,
+.footer button {
+  border: none !important;
+  background: transparent !important;
+  text-decoration: underline !important;
+  color: inherit !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+/* Remove "Go to Top" button and fix redundant space */
+#top-link,
+.top-link,
+button[id*="top"],
+a[id*="top-link"],
+div[id*="top-link"],
+[class*="top-link"],
+[aria-label*="go to top"],
+[aria-label*="Go to top"],
+button[onclick*="top"] {
+  display: none !important;
+}
+
+/* Remove excessive bottom spacing */
+body {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+html {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Ensure no extra space after main content */
+main {
+  margin-bottom: 1rem !important;
+  padding-bottom: 0 !important;
+}
+
 /* Fix navigation scrollbar */
 nav,
 .nav,
@@ -77,6 +196,107 @@ html::before {
   }
 }
 
+/* Realistic Aircraft Flight Animations */
+@keyframes rocketFlight {
+  0% {
+    left: -60px;
+    top: 80%;
+    transform: rotate(45deg) scale(0.8);
+    filter: drop-shadow(0 0 8px rgba(255, 100, 100, 0.6));
+  }
+  15% {
+    left: 20vw;
+    top: 60%;
+    transform: rotate(60deg) scale(1);
+    filter: drop-shadow(0 0 12px rgba(255, 150, 100, 0.8));
+  }
+  30% {
+    left: 40vw;
+    top: 30%;
+    transform: rotate(75deg) scale(1.1);
+    filter: drop-shadow(0 0 15px rgba(255, 200, 100, 1));
+  }
+  50% {
+    left: 60vw;
+    top: 10%;
+    transform: rotate(80deg) scale(1.2);
+    filter: drop-shadow(0 0 20px rgba(255, 255, 100, 1));
+  }
+  70% {
+    left: 80vw;
+    top: 5%;
+    transform: rotate(85deg) scale(1.1);
+    filter: drop-shadow(0 0 15px rgba(255, 200, 100, 0.8));
+  }
+  100% {
+    left: calc(100vw + 60px);
+    top: 2%;
+    transform: rotate(88deg) scale(0.6);
+    filter: drop-shadow(0 0 8px rgba(255, 100, 100, 0.4));
+  }
+}
+
+@keyframes planeFlight {
+  0% {
+    left: -50px;
+    top: 25%;
+    transform: rotate(5deg) scale(0.9);
+  }
+  20% {
+    left: 25vw;
+    top: 22%;
+    transform: rotate(2deg) scale(1);
+  }
+  40% {
+    left: 50vw;
+    top: 28%;
+    transform: rotate(-1deg) scale(1.05);
+  }
+  60% {
+    left: 70vw;
+    top: 24%;
+    transform: rotate(1deg) scale(1);
+  }
+  80% {
+    left: 85vw;
+    top: 26%;
+    transform: rotate(3deg) scale(0.95);
+  }
+  100% {
+    left: calc(100vw + 50px);
+    top: 23%;
+    transform: rotate(5deg) scale(0.8);
+  }
+}
+
+@keyframes smallPlaneFlight {
+  0% {
+    left: calc(100vw + 40px);
+    top: 70%;
+    transform: rotate(-5deg) scaleX(-1) scale(0.8);
+  }
+  25% {
+    left: 75vw;
+    top: 65%;
+    transform: rotate(-2deg) scaleX(-1) scale(1);
+  }
+  50% {
+    left: 50vw;
+    top: 72%;
+    transform: rotate(-8deg) scaleX(-1) scale(1.1);
+  }
+  75% {
+    left: 25vw;
+    top: 68%;
+    transform: rotate(-3deg) scaleX(-1) scale(1);
+  }
+  100% {
+    left: -40px;
+    top: 71%;
+    transform: rotate(-6deg) scaleX(-1) scale(0.9);
+  }
+}
+
 
 /* Main Content Container with Border */
 .main,
@@ -92,6 +312,28 @@ html::before {
   position: relative !important;
   z-index: 2 !important;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1) !important;
+  min-height: auto !important;
+}
+
+/* Remove backgrounds and borders from specific nested elements only */
+.main > article:not([style]),
+.main > section:not([style]),
+.post-content > article:not([style]),
+.post-content > section:not([style]),
+.page-content > article:not([style]),
+.page-content > section:not([style]) {
+  background: transparent !important;
+  border: none !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+}
+
+/* Restore styling for specific interactive elements that need it */
+.main img,
+.post-content img,
+.page-content img {
+  background: initial !important;
+  box-shadow: initial !important;
 }
 
 /* Remove glass effect from intro sections */
@@ -150,10 +392,14 @@ nav a:hover,
   color: #533483 !important;
 }
 
-/* Button Effects - Only for specific action buttons */
+/* Button Effects - Only for specific action buttons - Override general transparent rule */
 /* "Check out my blog" button on About page */
-a[href="/posts/"],
-a[href*="blog"] {
+.main a[href="/posts/"],
+.main a[href*="blog"],
+.post-content a[href="/posts/"],
+.post-content a[href*="blog"],
+.page-content a[href="/posts/"],
+.page-content a[href*="blog"] {
   display: inline-block !important;
   background: linear-gradient(135deg, #533483, #0f3460) !important;
   color: white !important;
@@ -164,20 +410,36 @@ a[href*="blog"] {
   box-shadow: 0 4px 15px rgba(83, 52, 131, 0.3) !important;
 }
 
-a[href="/posts/"]:hover,
-a[href*="blog"]:hover {
+.main a[href="/posts/"]:hover,
+.main a[href*="blog"]:hover,
+.post-content a[href="/posts/"]:hover,
+.post-content a[href*="blog"]:hover,
+.page-content a[href="/posts/"]:hover,
+.page-content a[href*="blog"]:hover {
   transform: translateY(-2px) !important;
   box-shadow: 0 8px 25px rgba(83, 52, 131, 0.5) !important;
   background: linear-gradient(135deg, #6a4c93, #1a5490) !important;
 }
 
 /* Social media buttons on Contacts page */
-a[href*="linkedin.com"],
-a[href*="github.com"],
-a[href*="facebook.com"],
-a[href*="wa.me"],
-a[href*="mailto:"],
-a[href*="tel:"] {
+.main a[href*="linkedin.com"],
+.main a[href*="github.com"],
+.main a[href*="facebook.com"],
+.main a[href*="wa.me"],
+.main a[href*="mailto:"],
+.main a[href*="tel:"],
+.post-content a[href*="linkedin.com"],
+.post-content a[href*="github.com"],
+.post-content a[href*="facebook.com"],
+.post-content a[href*="wa.me"],
+.post-content a[href*="mailto:"],
+.post-content a[href*="tel:"],
+.page-content a[href*="linkedin.com"],
+.page-content a[href*="github.com"],
+.page-content a[href*="facebook.com"],
+.page-content a[href*="wa.me"],
+.page-content a[href*="mailto:"],
+.page-content a[href*="tel:"] {
   display: inline-block !important;
   background: rgba(255, 255, 255, 0.1) !important;
   -webkit-backdrop-filter: blur(10px) !important;
@@ -190,12 +452,24 @@ a[href*="tel:"] {
   transition: all 0.3s ease !important;
 }
 
-a[href*="linkedin.com"]:hover,
-a[href*="github.com"]:hover,
-a[href*="facebook.com"]:hover,
-a[href*="wa.me"]:hover,
-a[href*="mailto:"]:hover,
-a[href*="tel:"]:hover {
+.main a[href*="linkedin.com"]:hover,
+.main a[href*="github.com"]:hover,
+.main a[href*="facebook.com"]:hover,
+.main a[href*="wa.me"]:hover,
+.main a[href*="mailto:"]:hover,
+.main a[href*="tel:"]:hover,
+.post-content a[href*="linkedin.com"]:hover,
+.post-content a[href*="github.com"]:hover,
+.post-content a[href*="facebook.com"]:hover,
+.post-content a[href*="wa.me"]:hover,
+.post-content a[href*="mailto:"]:hover,
+.post-content a[href*="tel:"]:hover,
+.page-content a[href*="linkedin.com"]:hover,
+.page-content a[href*="github.com"]:hover,
+.page-content a[href*="facebook.com"]:hover,
+.page-content a[href*="wa.me"]:hover,
+.page-content a[href*="mailto:"]:hover,
+.page-content a[href*="tel:"]:hover {
   transform: translateY(-2px) !important;
   background: rgba(255, 255, 255, 0.2) !important;
   box-shadow: 0 8px 20px rgba(83, 52, 131, 0.3) !important;
