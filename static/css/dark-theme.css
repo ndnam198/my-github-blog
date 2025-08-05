@@ -162,6 +162,19 @@ body.dark {
   filter: brightness(1.2) !important;
 }
 
+/* Dark theme - blog post cards enhanced styling */
+.dark .main article,
+.dark .post-content article {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.dark .main article:hover,
+.dark .post-content article:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
 /* Dark theme text colors */
 .dark .main p,
 .dark .post-content p,

@@ -99,6 +99,21 @@ body:not(.dark) .flying-objects::after {
   animation: smallPlaneFlight 40s ease-in-out infinite 20s !important;
 }
 
+/* Light theme - blog post cards enhanced styling */
+body:not(.dark) .main article,
+body:not(.dark) .post-content article {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%) !important;
+  border: 2px solid #e0e6ff !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08) !important;
+}
+
+body:not(.dark) .main article:hover,
+body:not(.dark) .post-content article:hover {
+  background: linear-gradient(135deg, #ffffff 0%, #f0f4ff 100%) !important;
+  border-color: #d0d8ff !important;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12) !important;
+}
+
 /* Light theme - bright solid backgrounds for better contrast */
 body:not(.dark) .contact-card {
   background: linear-gradient(135deg, #f8f9ff 0%, #e8f0ff 100%) !important;
@@ -367,44 +382,6 @@ body:not(.dark) div[style*="background: linear-gradient"] div {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) !important;
 }
 
-/* LIGHT MODE: Brighter, more vivid gradient text effects */
-body:not(.dark) span[style*="-webkit-background-clip: text"],
-body:not(.dark) span[style*="background-clip: text"] {
-  color: transparent !important;
-  -webkit-text-fill-color: transparent !important;
-  text-shadow: none !important;
-  filter: brightness(1.3) saturate(1.5) contrast(1.2) !important;
-  font-weight: 400 !important;
-}
-
-/* Light mode specific gradient overrides for highlighted numbers */
-body:not(.dark) span[style*="linear-gradient(135deg, #ff6b35, #f7931e)"] {
-  background: linear-gradient(135deg, #ff4500, #ff8c00, #ffa500) !important;
-  -webkit-background-clip: text !important;
-  background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  filter: brightness(1.4) saturate(2) contrast(1.3) !important;
-  font-weight: 400 !important;
-}
-
-body:not(.dark) span[style*="linear-gradient(135deg, #4ecdc4, #44a08d)"] {
-  background: linear-gradient(135deg, #00ced1, #20b2aa, #008b8b) !important;
-  -webkit-background-clip: text !important;
-  background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  filter: brightness(1.3) saturate(2) contrast(1.2) !important;
-  font-weight: 400 !important;
-}
-
-body:not(.dark) span[style*="linear-gradient(135deg, #e74c3c, #c0392b)"] {
-  background: linear-gradient(135deg, #dc143c, #b22222, #8b0000) !important;
-  -webkit-background-clip: text !important;
-  background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  filter: brightness(1.4) saturate(2.2) contrast(1.3) !important;
-  font-weight: 400 !important;
-}
-
 /* FINAL OVERRIDE: Colored containers MUST have white text - highest priority */
 body:not(.dark) .main div[style*="background: linear-gradient"],
 body:not(.dark) .post-content div[style*="background: linear-gradient"],
@@ -424,4 +401,46 @@ body:not(.dark) .page-content [style*="background: linear-gradient"] *,
 body:not(.dark) article [style*="background: linear-gradient"] * {
   color: white !important;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* ULTIMATE OVERRIDE: Gradient text effects - MUST come last to override all other text rules */
+/* This MUST come after ALL other text color rules to work properly */
+body:not(.dark) span[style*="-webkit-background-clip: text"],
+body:not(.dark) span[style*="background-clip: text"] {
+  color: transparent !important;
+  -webkit-text-fill-color: transparent !important;
+  text-shadow: none !important;
+  filter: brightness(1.3) saturate(1.5) contrast(1.2) !important;
+  font-weight: 400 !important;
+}
+
+/* Light mode specific gradient overrides for highlighted numbers - HIGHEST PRIORITY */
+body:not(.dark) span[style*="linear-gradient(135deg, #ff6b35, #f7931e)"] {
+  background: linear-gradient(135deg, #ff4500, #ff8c00, #ffa500) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  filter: brightness(1.4) saturate(2) contrast(1.3) !important;
+  font-weight: 400 !important;
+}
+
+body:not(.dark) span[style*="linear-gradient(135deg, #4ecdc4, #44a08d)"] {
+  background: linear-gradient(135deg, #00ced1, #20b2aa, #008b8b) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  filter: brightness(1.3) saturate(2) contrast(1.2) !important;
+  font-weight: 400 !important;
+}
+
+body:not(.dark) span[style*="linear-gradient(135deg, #e74c3c, #c0392b)"] {
+  background: linear-gradient(135deg, #dc143c, #b22222, #8b0000) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  filter: brightness(1.4) saturate(2.2) contrast(1.3) !important;
+  font-weight: 400 !important;
 }

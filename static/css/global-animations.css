@@ -316,6 +316,29 @@ html::before {
   min-height: auto !important;
 }
 
+/* Blog Post Cards - Adaptive styling for theme modes */
+.main article,
+.post-content article {
+  background: rgba(255, 255, 255, 0.03) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 15px !important;
+  padding: 2rem !important;
+  margin: 1.5rem 0 !important;
+  transition: all 0.3s ease !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.main article:hover,
+.post-content article:hover {
+  background: rgba(255, 255, 255, 0.05) !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15) !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
 /* Remove backgrounds and borders from specific nested elements only */
 .main > article:not([style]),
 .main > section:not([style]),
