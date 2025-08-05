@@ -539,25 +539,22 @@ button[aria-label="Toggle theme"],
   visibility: hidden !important;
 }
 
-/* Ensure blog post "Read More" links are visible */
-.post-entry .entry-footer,
-.post-entry .entry-footer a {
-  display: block !important;
-  visibility: visible !important;
-  color: #ffffff !important;
-  text-decoration: none !important;
-  padding: 0.5rem 1rem !important;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-  border-radius: 8px !important;
-  margin-top: 1rem !important;
-  text-align: center !important;
-  font-weight: 600 !important;
+/* Blog post cards - enhance the invisible overlay link */
+.post-entry {
+  cursor: pointer !important;
   transition: all 0.3s ease !important;
 }
 
-.post-entry .entry-footer a:hover {
-  background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%) !important;
-  transform: translateY(-2px) !important;
+.post-entry:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Style the entry footer normally */
+.post-entry .entry-footer {
+  color: var(--secondary) !important;
+  font-size: 13px !important;
+  margin-top: 8px !important;
 }
 
 /* Remove backgrounds and borders from specific nested elements only */
