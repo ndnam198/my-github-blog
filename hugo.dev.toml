@@ -9,6 +9,18 @@ theme = "PaperMod"
 
 [params]
   ShowPostsOnHomePage = false
+  # Force dark mode only
+  defaultTheme = "dark"
+  disableThemeToggle = true
+  # Blog post settings
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
   [params.homeInfoParams]
     Image = "/images/avatar.jpeg"
 
@@ -27,11 +39,16 @@ enableEmoji = true
     weight = 1
 
   [[menu.main]]
+    name = "Projects"
+    url = "/projects"
+    weight = 2
+
+  [[menu.main]]
     name = "Contacts"
     url = "/contacts"
-    weight = 2
+    weight = 3
 
   [[menu.main]]
     name = "About"
     url = "/"
-    weight = 3
+    weight = 4

@@ -1,10 +1,38 @@
-/* Subtle Static Background */
-html {
-  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 25%, #16213e 50%, #0f3460 75%, #533483 100%) !important;
+/* NUCLEAR OPTION: Force hacker background with maximum specificity */
+html,
+html.dark-mode,
+body.dark html,
+.dark html,
+html:not(.light-mode),
+body:not(.light) html {
+  background: linear-gradient(135deg, #0d1117 0%, #161b22 15%, #21262d 30%, #1c2128 45%, #0d1117 60%, #161b22 75%, #21262d 90%, #1c2128 100%) !important;
   min-height: 100vh !important;
   position: relative;
   overflow-x: hidden !important;
+  animation: hackerGradientShift 15s ease-in-out infinite !important;
 }
+
+/* Hacker gradient animation */
+@keyframes hackerGradientShift {
+  0% {
+    background: linear-gradient(135deg, #0d1117 0%, #161b22 15%, #21262d 30%, #1c2128 45%, #0d1117 60%, #161b22 75%, #21262d 90%, #1c2128 100%);
+  }
+  25% {
+    background: linear-gradient(135deg, #161b22 0%, #21262d 15%, #1c2128 30%, #0d1117 45%, #161b22 60%, #21262d 75%, #1c2128 90%, #0d1117 100%);
+  }
+  50% {
+    background: linear-gradient(135deg, #21262d 0%, #1c2128 15%, #0d1117 30%, #161b22 45%, #21262d 60%, #1c2128 75%, #0d1117 90%, #161b22 100%);
+  }
+  75% {
+    background: linear-gradient(135deg, #1c2128 0%, #0d1117 15%, #161b22 30%, #21262d 45%, #1c2128 60%, #0d1117 75%, #161b22 90%, #21262d 100%);
+  }
+  100% {
+    background: linear-gradient(135deg, #0d1117 0%, #161b22 15%, #21262d 30%, #1c2128 45%, #0d1117 60%, #161b22 75%, #21262d 90%, #1c2128 100%);
+  }
+}
+
+/* Import hacker background for additional effects */
+@import url('hacker_animated_bg.css');
 
 body {
   background: transparent !important;
@@ -298,6 +326,170 @@ html::before {
 }
 
 
+/* ===== GENTLE HOVER ANIMATIONS ===== */
+
+/* Card tilt animation for glass-morphism containers */
+.main > div[style*="background: rgba"],
+.post-content > div[style*="background: rgba"],
+.page-content > div[style*="background: rgba"],
+article[style*="background: rgba"] {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transform-style: preserve-3d !important;
+}
+
+.main > div[style*="background: rgba"]:hover,
+.post-content > div[style*="background: rgba"]:hover,
+.page-content > div[style*="background: rgba"]:hover,
+article[style*="background: rgba"]:hover {
+  transform: translateY(-5px) rotateX(2deg) rotateY(1deg) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3) !important;
+  backdrop-filter: blur(15px) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Light splash effect for interactive elements */
+a, button, [role="button"], .blog-button, [href] {
+  position: relative !important;
+  overflow: hidden !important;
+  transition: all 0.3s ease !important;
+}
+
+a::before, button::before, [role="button"]::before, .blog-button::before, [href]::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  width: 0 !important;
+  height: 0 !important;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%) !important;
+  transform: translate(-50%, -50%) !important;
+  transition: all 0.6s ease !important;
+  pointer-events: none !important;
+  z-index: 1 !important;
+  border-radius: 50% !important;
+}
+
+a:hover::before, button:hover::before, [role="button"]:hover::before, .blog-button:hover::before, [href]:hover::before {
+  width: 300px !important;
+  height: 300px !important;
+  opacity: 0 !important;
+}
+
+/* Gentle glow for profile image */
+img[alt*="Nam Nguyen"], .avatar-image {
+  transition: all 0.4s ease !important;
+  animation: breathingGlow 4s ease-in-out infinite !important;
+}
+
+@keyframes breathingGlow {
+  0%, 100% {
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.2) !important;
+    filter: brightness(1) !important;
+  }
+  50% {
+    box-shadow: 0 12px 40px rgba(102, 126, 234, 0.4) !important;
+    filter: brightness(1.05) !important;
+  }
+}
+
+img[alt*="Nam Nguyen"]:hover, .avatar-image:hover {
+  transform: scale(1.05) rotate(1deg) !important;
+  box-shadow: 0 16px 50px rgba(102, 126, 234, 0.6) !important;
+  filter: brightness(1.1) !important;
+}
+
+/* Floating animation for skill tags */
+span[style*="background: rgba(102, 126, 234"],
+span[style*="background: rgba(240, 147, 251"],
+span[style*="background: rgba(79, 172, 254"] {
+  transition: all 0.3s ease !important;
+  cursor: pointer !important;
+}
+
+span[style*="background: rgba(102, 126, 234"]:hover,
+span[style*="background: rgba(240, 147, 251"]:hover,
+span[style*="background: rgba(79, 172, 254"]:hover {
+  transform: translateY(-3px) scale(1.05) !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3) !important;
+  filter: brightness(1.2) !important;
+}
+
+/* Subtle animation for navigation items */
+nav a, .menu a {
+  position: relative !important;
+  transition: all 0.3s ease !important;
+}
+
+nav a::after, .menu a::after {
+  content: '' !important;
+  position: absolute !important;
+  bottom: -2px !important;
+  left: 0 !important;
+  width: 0 !important;
+  height: 2px !important;
+  background: linear-gradient(90deg, #667eea, #764ba2) !important;
+  transition: width 0.3s ease !important;
+}
+
+nav a:hover::after, .menu a:hover::after {
+  width: 100% !important;
+}
+
+/* Gentle pulse for call-to-action buttons */
+a[href*="blog"], a[href*="projects"], .cta-button {
+  animation: gentlePulse 3s ease-in-out infinite !important;
+}
+
+@keyframes gentlePulse {
+  0%, 100% {
+    transform: scale(1) !important;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+  }
+  50% {
+    transform: scale(1.02) !important;
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5) !important;
+  }
+}
+
+/* Smooth text reveal animation */
+h1, h2, h3, h4 {
+  animation: textReveal 0.8s ease-out !important;
+}
+
+@keyframes textReveal {
+  from {
+    opacity: 0 !important;
+    transform: translateY(20px) !important;
+  }
+  to {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+}
+
+/* Staggered animation for list items */
+li {
+  animation: slideInLeft 0.6s ease-out !important;
+  animation-fill-mode: both !important;
+}
+
+li:nth-child(1) { animation-delay: 0.1s !important; }
+li:nth-child(2) { animation-delay: 0.2s !important; }
+li:nth-child(3) { animation-delay: 0.3s !important; }
+li:nth-child(4) { animation-delay: 0.4s !important; }
+li:nth-child(5) { animation-delay: 0.5s !important; }
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0 !important;
+    transform: translateX(-30px) !important;
+  }
+  to {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+  }
+}
+
 /* Remove outer container styling - make main containers transparent */
 .main,
 .post-content,
@@ -337,6 +529,35 @@ html::before {
   transform: translateY(-3px) !important;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15) !important;
   border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+/* Force hide theme toggle button */
+button[aria-label="Toggle theme"],
+.theme-toggle,
+#theme-toggle {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Ensure blog post "Read More" links are visible */
+.post-entry .entry-footer,
+.post-entry .entry-footer a {
+  display: block !important;
+  visibility: visible !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  padding: 0.5rem 1rem !important;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  border-radius: 8px !important;
+  margin-top: 1rem !important;
+  text-align: center !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+}
+
+.post-entry .entry-footer a:hover {
+  background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%) !important;
+  transform: translateY(-2px) !important;
 }
 
 /* Remove backgrounds and borders from specific nested elements only */
