@@ -22,7 +22,7 @@ git submodule update --init --recursive
 hugo server --config hugo.dev.toml
 ```
 
-Open **http://localhost:1313**. Without `--config hugo.dev.toml`, Hugo uses `hugo.toml` (production baseURL). Use `-D` to include draft posts: `hugo server --config hugo.dev.toml -D`.
+Open **<http://localhost:1313>**. Without `--config hugo.dev.toml`, Hugo uses `hugo.toml` (production baseURL). Use `-D` to include draft posts: `hugo server --config hugo.dev.toml -D`.
 
 ## Build for production
 
@@ -43,16 +43,16 @@ Pushes to the **`develop`** branch trigger the GitHub Actions workflow (`.github
 
 ## Project structure
 
-| Path | Purpose |
-|------|---------|
-| `hugo.toml` | Production config (baseURL for GitHub Pages) |
-| `hugo.dev.toml` | Dev config (localhost baseURL) |
-| `content/` | All content: `_index.md`, `about.md`, `projects.md`, `contacts.md`, `posts/*.md` |
-| `content/posts/` | Blog posts (front matter: title, date, draft, etc.) |
-| `layouts/` | Overrides: `404.html`, `partials/extend_head.html`, `shortcodes/` |
-| `static/` | Images, JSON, `.htaccess`, `_redirects` |
-| `themes/PaperMod` | Theme (git submodule) |
-| `archetypes/default.md` | Default front matter for new content |
+| Path                    | Purpose                                                                          |
+| ----------------------- | -------------------------------------------------------------------------------- |
+| `hugo.toml`             | Production config (baseURL for GitHub Pages)                                     |
+| `hugo.dev.toml`         | Dev config (localhost baseURL)                                                   |
+| `content/`              | All content: `_index.md`, `about.md`, `projects.md`, `contacts.md`, `posts/*.md` |
+| `content/posts/`        | Blog posts (front matter: title, date, draft, etc.)                              |
+| `layouts/`              | Overrides: `404.html`, `partials/extend_head.html`, `shortcodes/`                |
+| `static/`               | Images, JSON, `.htaccess`, `_redirects`                                          |
+| `themes/PaperMod`       | Theme (git submodule)                                                            |
+| `archetypes/default.md` | Default front matter for new content                                             |
 
 ## How to expand
 
@@ -103,13 +103,13 @@ Put assets in `static/images/` and reference as `/images/yourfile.png`. An optio
 
 ## Useful commands
 
-| Command | Description |
-|--------|-------------|
-| `hugo server --config hugo.dev.toml` | Dev server (localhost baseURL) |
-| `hugo server --config hugo.dev.toml -D` | Include draft posts |
-| `hugo new posts/slug.md` | New post from archetype |
-| `hugo --minify` | Production build |
-| `hugo list drafts` | List draft content |
+| Command                                 | Description                    |
+| --------------------------------------- | ------------------------------ |
+| `hugo server --config hugo.dev.toml`    | Dev server (localhost baseURL) |
+| `hugo server --config hugo.dev.toml -D` | Include draft posts            |
+| `hugo new posts/slug.md`                | New post from archetype        |
+| `hugo --minify`                         | Production build               |
+| `hugo list drafts`                      | List draft content             |
 
 ## License
 

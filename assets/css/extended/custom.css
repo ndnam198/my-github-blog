@@ -1,0 +1,126 @@
+/* Theme-aware overrides using PaperMod vars only */
+
+.post-content .summary-block {
+  padding: 1rem;
+  border: 1px solid var(--border);
+  background: var(--code-bg);
+  border-radius: var(--radius);
+}
+
+.post-content .hero-badges {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.post-content .hero-badges span {
+  padding: 0.5rem 1rem;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: var(--content);
+}
+
+.post-content .cta-block {
+  text-align: center;
+  padding: 2rem;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin: 3rem 0;
+}
+
+.post-content .cta-block h3,
+.post-content .cta-block p {
+  color: var(--content);
+}
+
+.post-content .cta-block a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 0.5rem 0.5rem 0;
+}
+
+.post-content .cta-block a.cta-primary {
+  background: var(--primary);
+  color: var(--theme);
+}
+
+.post-content .cta-block a.cta-secondary {
+  background: var(--entry);
+  color: var(--primary);
+  border: 1px solid var(--border);
+}
+
+/* Contact cards: theme-aware border and background */
+.post-content .contact-card {
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  background: var(--code-bg);
+}
+
+/* Project cards: visible border and background in both themes */
+.post-content .project-card {
+  border-radius: var(--radius);
+  padding: 2rem;
+  border: 1px solid var(--border);
+  background: var(--code-bg);
+  transition: box-shadow 0.2s ease;
+}
+
+.post-content .project-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.dark .post-content .project-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Theme-aware text inside project cards (fixes light-theme contrast) */
+.post-content .project-card h3,
+.post-content .project-card h4 {
+  color: var(--primary);
+}
+
+.post-content .project-card p,
+.post-content .project-card ul,
+.post-content .project-card li {
+  color: var(--content);
+}
+
+.post-content .project-card .project-meta {
+  color: var(--secondary);
+  font-size: 0.9rem;
+}
+
+.post-content .project-card .category-badge,
+.post-content .project-card .tech-tag {
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  background: var(--entry);
+  border: 1px solid var(--border);
+  color: var(--content);
+}
+
+.post-content .project-card .category-badge {
+  padding: 0.3rem 0.8rem;
+  font-weight: 600;
+}
+
+.post-content .project-card .project-link {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: var(--primary);
+  color: var(--theme);
+}
