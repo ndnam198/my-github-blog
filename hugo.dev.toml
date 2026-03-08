@@ -8,11 +8,11 @@ theme = "PaperMod"
     dir = ':cacheDir/images'
 
 [params]
-  ShowPostsOnHomePage = false
-  # Force dark mode only
-  defaultTheme = "dark"
-  disableThemeToggle = true
-  # Blog post settings
+  author = { name = "Nam Nguyen", email = "ndnam198@gmail.com" }
+  mainSections = ["posts"]
+  ShowPostsOnHomePage = true
+  defaultTheme = "light"
+  disableThemeToggle = false
   ShowReadingTime = true
   ShowShareButtons = true
   ShowPostNavLinks = true
@@ -21,8 +21,24 @@ theme = "PaperMod"
   ShowWordCount = true
   ShowRssButtonInSectionTermList = false
   UseHugoToc = true
+
   [params.homeInfoParams]
-    Image = "/images/avatar.jpeg"
+    Title = "Nam's Homepage"
+    Content = """
+    Welcome. This is a simple blog built with Hugo and PaperMod.
+    """
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/ndnam198/"
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:ndnam198@gmail.com"
+
+  [[params.socialIcons]]
+    name = "rss"
+    url = "index.xml"
 
 # Enable custom 404 page
 enableEmoji = true
@@ -34,21 +50,21 @@ enableEmoji = true
 
 [menu]
   [[menu.main]]
-    name = "Blog"
-    url = "/posts/"
+    name = "Archive"
+    url = "/archives/"
     weight = 1
 
   [[menu.main]]
-    name = "Projects"
-    url = "/projects"
+    name = "Categories"
+    url = "/categories/"
     weight = 2
 
   [[menu.main]]
-    name = "Contacts"
-    url = "/contacts"
+    name = "Search"
+    url = "/search/"
     weight = 3
 
   [[menu.main]]
-    name = "About"
-    url = "/"
+    name = "Tags"
+    url = "/tags/"
     weight = 4

@@ -76,8 +76,7 @@ aliases = [
         <span style="padding: 0.3rem 0.8rem; background: rgba(102, 126, 234, 0.2); border-radius: 15px; font-size: 0.8rem;">Dart</span>
         <span style="padding: 0.3rem 0.8rem; background: rgba(102, 126, 234, 0.2); border-radius: 15px; font-size: 0.8rem;">JavaScript</span>
         <span style="padding: 0.3rem 0.8rem; background: rgba(102, 126, 234, 0.2); border-radius: 15px; font-size: 0.8rem;">TypeScript</span>
-        <span style="padding: 0.3rem 0.8rem; background: rgba(102, 126, 234, 0.2); border-radius: 15px; font-size: 0.8rem;">Java</span>
-        <span style="padding: 0.3rem 0.8rem; background: rgba(102, 126, 234, 0.2); border-radius: 15px; font-size: 0.8rem;">C/C#</span>
+        <span style="padding: 0.3rem 0.8rem; background: rgba(102, 126, 234, 0.2); border-radius: 15px; font-size: 0.8rem;">Python</span>
       </div>
     </div>
     
@@ -94,10 +93,11 @@ aliases = [
     <div>
       <h4 style="margin: 0 0 0.5rem 0; color: #fff; font-size: 1rem;">Cloud & Tools</h4>
       <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
-        <span style="padding: 0.3rem 0.8rem; background: rgba(79, 172, 254, 0.2); border-radius: 15px; font-size: 0.8rem;">Azure</span>
         <span style="padding: 0.3rem 0.8rem; background: rgba(79, 172, 254, 0.2); border-radius: 15px; font-size: 0.8rem;">GCP</span>
         <span style="padding: 0.3rem 0.8rem; background: rgba(79, 172, 254, 0.2); border-radius: 15px; font-size: 0.8rem;">Docker</span>
         <span style="padding: 0.3rem 0.8rem; background: rgba(79, 172, 254, 0.2); border-radius: 15px; font-size: 0.8rem;">Fastlane</span>
+        <span style="padding: 0.3rem 0.8rem; background: rgba(79, 172, 254, 0.2); border-radius: 15px; font-size: 0.8rem;">Firebase</span>
+        <span style="padding: 0.3rem 0.8rem; background: rgba(79, 172, 254, 0.2); border-radius: 15px; font-size: 0.8rem;">Supabase</span>
       </div>
     </div>
   </div>
