@@ -10,8 +10,6 @@ aliases = [
 ]
 +++
 
-## Let's Connect!
-
 I'd love to hear from you! Whether you want to collaborate on a project, discuss technology, or just say hello, feel free to reach out through any of these platforms.
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 900px; margin: 0 auto; padding: 0 1rem;">

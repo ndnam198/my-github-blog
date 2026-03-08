@@ -4,8 +4,6 @@ draft = false
 title = 'Create your first blog using GitHub Pages and Hugo'
 +++
 
-# Building a Personal Page Blog using GitHub Pages and Hugo
-
 In this guide, we will walk through the process of setting up a personal page blog using GitHub Pages and Hugo. This will allow you to create a professional-looking blog with minimal effort.
 
 ## Prerequisites

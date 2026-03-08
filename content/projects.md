@@ -3,8 +3,6 @@ draft = false
 title = 'Projects'
 +++
 
-## My Projects
-
 A showcase of applications I've built and shipped, serving over **100,000 users** worldwide.
 
 {{< rawhtml >}}
