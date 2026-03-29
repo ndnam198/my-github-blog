@@ -2,6 +2,8 @@
 date = '2026-03-14T16:05:21+07:00'
 draft = false
 title = 'Package Your Own Msix and Ship'
+tags = ["msix", "windows", "packaging"]
+categories = ["Windows"]
 +++
 
 If you have built a Windows program (an `.exe` file) and want to wrap it into a modern Windows format (an `.msix` file), you are in the right place. The `.msix` format makes installing, updating, and removing apps very clean and safe for Windows computers.

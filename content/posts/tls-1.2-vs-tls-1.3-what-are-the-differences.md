@@ -2,6 +2,8 @@
 date = '2026-03-20T15:40:34+07:00'
 draft = true
 title = 'Unlocking the Mystery of TLS: How Secret Keys are Made'
+tags = ["tls", "https", "security"]
+categories = ["Security"]
 +++
 
 Have you ever wondered how your computer (the client) and a website (the server) can agree on a secret password over the open internet without hackers stealing it? This article explains the clever math and steps behind this process, known as a secure key exchange.

@@ -2,6 +2,8 @@
 date = '2026-03-10T21:07:45+07:00'
 draft = false
 title = 'TIL: How to Connect to a GKE Cluster Using the Google Cloud CLI'
+tags = ["gcp", "gke", "kubernetes", "gcloud"]
+categories = ["Cloud"]
 +++
 
 If you need to access a Google Kubernetes Engine (GKE) cluster but aren't sure where to start, you can easily find your project, locate the cluster, and configure your local environment using the `gcloud` CLI.

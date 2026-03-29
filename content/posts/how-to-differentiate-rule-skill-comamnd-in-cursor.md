@@ -2,6 +2,8 @@
 date = '2026-03-18T09:34:25+07:00'
 draft = true
 title = 'How to Differentiate Rule Skill Comamnd in Cursor'
+tags = ["cursor", "editor", "ai"]
+categories = ["Tools"]
 +++
 
 Rules apply to the system prompt. There are 4 types: Always Apply (always), Apply Intelligently (the agent decides), Apply to Specific Files (by glob patterns), and Apply Manually (via @mention). They’re stored in .cursor/rules/.

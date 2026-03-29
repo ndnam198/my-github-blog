@@ -2,6 +2,8 @@
 date = '2026-03-14T15:35:31+07:00'
 draft = false
 title = 'How Digital Certificates Work: From Websites to Windows Apps'
+tags = ["tls", "certificates", "pki"]
+categories = ["Security"]
 +++
  
 ## The Complete Guide to Digital Certificates: How They Keep the Internet Safe

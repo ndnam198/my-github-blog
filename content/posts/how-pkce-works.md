@@ -2,6 +2,8 @@
 date = '2026-03-08T23:12:22+07:00'
 draft = false
 title = 'TIL: Why OAuth 2.0 Needs PKCE (and How It Replaces the Client Secret)'
+tags = ["oauth2", "pkce", "security"]
+categories = ["Security"]
 +++
 
 Today I learned how **PKCE** (Proof Key for Code Exchange, pronounced *"pixie"*) solves a major security flaw in the standard OAuth 2.0 Authorization Code flow for public applications.

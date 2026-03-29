@@ -2,6 +2,8 @@
 date = '2026-03-16T13:54:51+07:00'
 draft = false
 title = 'TIL: Why Standard PHP Does Not Share Database Connections (And How to Fix It)'
+tags = ["php", "database", "mysql"]
+categories = ["Backend"]
 +++
 
 If you are coming to PHP from languages like Java, C#, or Node.js, you might expect your application to keep a "pool" of database connections open in the background. This allows different users to share active connections, making the app faster and saving resources.

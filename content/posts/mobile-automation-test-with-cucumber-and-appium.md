@@ -2,6 +2,8 @@
 date = '2026-03-18T16:09:45+07:00'
 draft = false
 title = 'How Appium Works: Connecting Your Computer to Your Phone'
+tags = ["appium", "mobile", "testing", "cucumber"]
+categories = ["Testing"]
 +++
 
 When you are testing a mobile app, the way all the tools talk to each other can feel a bit confusing. You might wonder: *Where does Appium actually live? Is it on my phone or my computer?* Let's break down the relationship between Appium, your testing tools, and your mobile phone in a simple way.

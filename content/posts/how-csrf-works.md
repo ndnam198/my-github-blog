@@ -2,6 +2,8 @@
 date = '2026-03-08T23:05:06+07:00'
 draft = false
 title = 'TIL: The Mechanics of CSRF, Web Defense Strategies'
+tags = ["csrf", "security", "web", "cookies"]
+categories = ["Security"]
 +++
 
 Today I dove deep into **Cross-Site Request Forgery (CSRF)**. It’s a sneaky vulnerability because it doesn’t steal your data directly; instead, it "borrows" your active session to perform unauthorized actions on your behalf.

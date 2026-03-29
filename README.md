@@ -1,4 +1,4 @@
-# Nam's Homepage (Hugo blog)
+# Nam's Blog (Hugo blog)
 
 Personal blog and portfolio built with [Hugo](https://gohugo.io/) and the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme. Deploys to GitHub Pages.
 
