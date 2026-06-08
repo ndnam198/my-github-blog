@@ -1,0 +1,64 @@
+mindmap
+  root((Retrieving
+  Vectorized Data))
+    (What problem are you solving?)
+      ::icon(fa fa-question-circle)
+    
+    1_Core_Need_Semantic_Understanding
+      ::icon(fa fa-brain)
+      [Method: Pure Vector Search]
+        [Goal: Find conceptual similarity]
+          [Example: 'Photos of happy dogs']
+        _Tradeoffs
+          > High Recall
+          > Understands synonyms
+          > Stuggles with specific IDs
+
+    2_Need_Exact_Keywords
+      ::icon(fa fa-search)
+      [Method: Hybrid Search]
+        > Blends Semantic + BM25 Keywords
+        [Goal: Combine meaning AND jargon]
+          [Example: 'Python tutorial for SKU-123']
+        _How_it_works
+          > Reciprocal Rank Fusion RRF
+          > Balanced scoring
+        _Tradeoffs
+          > Higher storage cost
+          > Higher latency
+
+    3_Need_Structured_Constraints
+      ::icon(fa fa-filter)
+      [Method: Metadata Filtering]
+        [Goal: Add HARD 'SQL-like' rules]
+          [Example: 'Sci-fi movies' AND 'Rating > 8']
+        _Techniques
+          (Pre-filtering preferred)
+          (Namespaces / Collections)
+        _Tradeoffs
+          > High Precision
+          > Must have structured data
+          > Adds minimal latency
+
+    4_Query_is_Vague_Complex
+      ::icon(fa fa-magic)
+      [Method: LLM Pre-processing]
+        _Self-Querying
+          > LLM extracts metadata filter automatically
+          [Example: 'Show me news from 2024 about AI']
+        _Multi-Query
+          > Generates 3-5 paraphrased queries
+          [Goal: Capture many semantic angles]
+
+    5_Accuracy_Must_Be_Perfect
+      ::icon(fa fa-thumbs-up)
+      [Method: Two-Stage Reranking]
+        [Goal: Re-sort initial results with high precision]
+        _Pipeline
+          1. ANN Vector Search for Top 100 fast
+          2. Cross-Encoder reranks the 100 slow
+        _Tradeoffs
+          > Best possible ranking
+          > Adds significant latency
+
+
