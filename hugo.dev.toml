@@ -1,73 +1,79 @@
 baseURL = 'http://localhost:1313'
-languageCode = 'en-us'
+locale = 'en-us'
 title = "Nam's Blog"
 theme = "PaperMod"
 
 [caches]
-  [caches.images]
-    dir = ':cacheDir/images'
+[caches.images]
+dir = ':cacheDir/images'
 
 [params]
-  author = { name = "Nam Nguyen", email = "ndnam198@gmail.com" }
-  mainSections = ["posts"]
-  ShowPostsOnHomePage = true
-  defaultTheme = "light"
-  disableThemeToggle = false
-  ShowReadingTime = true
-  ShowShareButtons = true
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = false
-  ShowCodeCopyButtons = true
-  ShowWordCount = true
-  ShowRssButtonInSectionTermList = false
-  UseHugoToc = true
+author = { name = "Nam Nguyen", email = "ndnam198@gmail.com" }
+mainSections = ["posts"]
+ShowPostsOnHomePage = true
+defaultTheme = "light"
+disableThemeToggle = false
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = false
+ShowCodeCopyButtons = true
+ShowWordCount = true
+ShowRssButtonInSectionTermList = false
+UseHugoToc = true
 
-  [params.homeInfoParams]
-    Title = "Posts"
-    Content = """
+[params.homeInfoParams]
+Title = "Posts"
+Content = """
     Welcome. This is where I post my content and experiences.
     """
 
-  [[params.socialIcons]]
-    name = "about"
-    url = "/about/"
+[[params.socialIcons]]
+name = "information"
+url = "/about/"
 
-  [[params.socialIcons]]
-    name = "email"
-    url = "mailto:ndnam198@gmail.com"
+[[params.socialIcons]]
+name = "email"
+url = "mailto:ndnam198@gmail.com"
 
-  [[params.socialIcons]]
-    name = "rss"
-    url = "index.xml"
+[[params.socialIcons]]
+name = "rss"
+url = "index.xml"
 
 # Enable custom 404 page
 enableEmoji = true
 
 [markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+home = ["HTML", "RSS", "JSON"]
 
 [menu]
-  [[menu.main]]
-    name = "Archive"
-    url = "/archives/"
-    weight = 1
 
-  [[menu.main]]
-    name = "Categories"
-    url = "/categories/"
-    weight = 2
+[[menu.main]]
+name = "Archive"
+url = "/archives/"
+weight = 1
 
-  [[menu.main]]
-    name = "Search"
-    url = "/search/"
-    weight = 3
+[[menu.main]]
+name = "Categories"
+url = "/categories/"
+weight = 2
 
-  [[menu.main]]
-    name = "Tags"
-    url = "/tags/"
-    weight = 4
+[[menu.main]]
+name = "Search"
+url = "/search/"
+weight = 3
+
+[[menu.main]]
+name = "Tags"
+url = "/tags/"
+weight = 4
+
+[[menu.main]]
+name = "About"
+url = "/about/"
+weight = 5
