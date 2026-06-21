@@ -34,14 +34,18 @@ Here is a simple flow diagram to show how messages travel from your computer to 
 
 ```mermaid
 flowchart LR
-    subgraph Your Computer
-    A[Appium Inspector / WDIO<br/>(The Client)] -- Sends commands --> B[Appium Server<br/>started with 'npx appium']
+    subgraph computer["Your Computer"]
+        A["Appium Inspector / WDIO<br/>(The Client)"]
+        B["Appium Server<br/>started with npx appium"]
     end
-    
-    subgraph Your Mobile Device
-    B -- Controls via USB/Wi-Fi --> C[Mobile Phone<br/>Runs your App + Helpers]
+
+    subgraph device["Your Mobile Device"]
+        C["Mobile Phone<br/>Runs your App + Helpers"]
     end
-    
+
+    A -->|"Sends commands"| B
+    B -->|"Controls via USB/Wi-Fi"| C
+
     style A fill:#e1f5fe,stroke:#03a9f4,stroke-width:2px
     style B fill:#fff3e0,stroke:#ff9800,stroke-width:2px
     style C fill:#e8f5e9,stroke:#4caf50,stroke-width:2px
